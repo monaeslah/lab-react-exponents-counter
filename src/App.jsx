@@ -1,11 +1,7 @@
 import './App.css'
 import { useState } from 'react'
 import Counter from './components/Counter'
-import ExponentTwo from './components/ExponentTwo'
-import ExponentThree from './components/ExponentThree'
-import ExponentFour from './components/ExponentFour'
-import ExponentFive from './components/ExponentFive'
-import ExponentSix from './components/ExponentSix'
+import Exponent from './components/Exponents'
 
 function App () {
   const [count, setCount] = useState(0)
@@ -30,11 +26,11 @@ function App () {
       </h2>
 
       <div className='container'>
-        <ExponentTwo callBackCount={count} />
-        <ExponentThree callBackCount={count} />
-        <ExponentFour callBackCount={count} />
-        <ExponentFive callBackCount={count} />
-        <ExponentSix callBackCount={count} />
+        <Exponent callBackCount={count} power={2} />
+        <Exponent callBackCount={count} power={3} />
+        <Exponent callBackCount={count} power={4} />
+        <Exponent callBackCount={count} power={5} />
+        <Exponent callBackCount={count} power={6} />
       </div>
     </div>
   )
